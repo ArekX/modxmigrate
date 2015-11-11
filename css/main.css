@@ -1,0 +1,15 @@
+label.form-item {
+	display: block;
+}
+
+.buttons {
+	margin-top: 20px;
+}
+
+.fix-output {
+	margin-top: 40px;
+	height: 270px;
+	border: 1px solid #CCC;
+	padding: 5px;
+	width: 100%; 
+}
