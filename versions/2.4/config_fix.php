@@ -7,11 +7,11 @@ class ConfigFix extends FixAbstract
 	public function fix()
 	{
 		$basePath = realpath(__DIR__ . '/../../../');
-		$corePath = realpath($basePath . '/core');
-		$processorsPath = realpath($basePath . '/core/model/modx/processors/');
-		$connectorsPath = realpath($basePath . '/connectors/');
-		$managerPath = realpath($basePath . '/manager/');
-		$assetsPath = realpath($basePath . '/assets/');
+		$corePath = $basePath . '/core/';
+		$processorsPath = $basePath . '/core/model/modx/processors/';
+		$connectorsPath = $basePath . '/connectors/';
+		$managerPath = $basePath . '/manager/';
+		$assetsPath = $basePath . '/assets/';
 
 		$cacheDisabled = $_POST['MODX_CACHE_DISABLED'] == '1' ? 'true' : 'false';
 
