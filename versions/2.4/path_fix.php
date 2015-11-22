@@ -7,7 +7,7 @@ class PathFix extends FixAbstract
 	public function fix()
 	{
 		$fileContents = file_get_contents($this->_config['file']);
-		$corePath = realpath(__DIR__ . '/../../../core');
+		$corePath = realpath(__DIR__ . '/../../../core') . '/';
 
 		$fileContents = preg_replace("/define\(\'MODX_CORE_PATH\',\s*\'(.+)\'\);/", "define('MODX_CORE_PATH','{$corePath}');", $fileContents);
 
