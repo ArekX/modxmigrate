@@ -65,10 +65,10 @@ if (isset($_POST['migrate'])) {
 		require_once $config['fixer'];
 		$className = $config['fixClass'];
 
-		$instance = new $className([
+		$instance = new $className(array(
 			'file' => $fixFile,
-			'additional' => !empty($config['additional']) ? $config['additional'] : []
-		]);
+			'additional' => !empty($config['additional']) ? $config['additional'] : array()
+		));
 
 		echo "Processsing fix for file {$fixFile}...\n";
 		$instance->fix();
