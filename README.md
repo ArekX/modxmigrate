@@ -16,3 +16,4 @@ MODx Revolution Site Migration Automation Script
 # Supported MODx versions:
 
 * MODx Revolution 2.4
+* MODx Revolution 2.2
